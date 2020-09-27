@@ -1,5 +1,4 @@
-from flask import Flask, Blueprint
-from flask import request, jsonify,abort
+from flask import Flask, Blueprint, request, jsonify,abort,redirect, url_for
 
 from challenge import CountryChallenge
 
@@ -7,6 +6,9 @@ challenge = CountryChallenge("csv/countries.csv")
 
 api = Blueprint('api', __name__)
 
+@api.route('/')
+def index():
+    return redirect(url_for('api.countries'))
 
 @api.route('/countries', methods=['GET'])
 def countries():
