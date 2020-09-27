@@ -12,6 +12,7 @@
 
 ## Inicio rapido
 - Instalar [Python 3](https://www.python.org/downloads/)
+- Ejecutar `pip install pandas` para instalar libreria pandas 
 - Ejecutar `pip install Flask` o instalar [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#installation) 
 - Colocarse en el directorio del proyecto `cd <path-to-project>` 
 - Ejecutar `python app.py`
